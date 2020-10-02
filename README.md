@@ -267,7 +267,7 @@ v1_services.get(field_selector='metadata.namespace!=default')
 
 Query for a resource in the cluster. Will return a `ResourceInstance` object or raise a `NotFoundError`
 
-For List kind resources (ie, the resource name ends in `List`), the `get` implementation is slightly different.
+For List kind of resources (ie, the resource name ends in `List`), the `get` implementation is slightly different.
 Rather than taking a name, they take a `*List` kind definition and call `get` for each definition in the list.
 
 ```python
